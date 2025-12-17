@@ -1,0 +1,122 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* Main container */
+.container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Heading */
+.container h1 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Description text */
+.container p {
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Form */
+.form {
+  margin-top: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input field */
+.guessField {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.guessField:focus {
+  border-color: #4facfe;
+}
+
+/* Submit button */
+.guessSubmit {
+  width: 100%;
+  padding: 10px;
+  background: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.guessSubmit:hover {
+  background: #2f80ed;
+}
+
+/* Result section */
+.result {
+  margin-top: 20px;
+}
+
+.result p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Highlight numbers */
+.previousGuesses,
+.remainingGuesses {
+  font-weight: bold;
+  color: #2f80ed;
+}
+
+/* Low / High message */
+.lowOrHigh {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Message colors (optional JS use) */
+.lowOrHigh.success {
+  color: green;
+}
+
+.lowOrHigh.error {
+  color: red;
+}
+
+.lowOrHigh.info {
+  color: orange;
+}
