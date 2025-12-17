@@ -35,7 +35,6 @@ function validateGuess(guess){
         alert('Please enter a number less then 100')
     } else {
         previousGuess.push(guess)
-        numGuess++;
         if( numGuess === totalGuess){
             displayMessage(`Game Over. Random number was ${guess}`)
             displayGuess()
@@ -59,6 +58,7 @@ function checkGuess(guess){
 }
 
 function displayGuess(){
+    numGuess++;
     userInput.value = ''
     previousGuesses.innerText = `${previousGuess} `
     remainingGuesses.innerText = `${ totalGuess - numGuess}`
